@@ -62,7 +62,7 @@ public class JdbcWeatherDao implements WeatherDao {
 
 
         int weatherId = result.getInt("weather_id");
-        int userId= result.getInt("userId");
+        int userId= result.getInt("user_id");
         int zipcode = result.getInt("zipcode");
         String name = result.getString("name");
         LocalDate date = result.getDate("weather_date").toLocalDate();
